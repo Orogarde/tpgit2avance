@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<h1>exercice php bateaux</h1>
 <?php
 $bateaux=array (
     "Manureva" => array("nbequipage"=>3,"nbpassager"=>4),
