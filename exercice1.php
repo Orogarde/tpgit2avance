@@ -10,13 +10,14 @@
 <h1>exercice php bateaux</h1>
 <p>test<p>
 <?php
-$total=0;
+
 $bateaux=array (
     "Manureva" => array("nbequipage"=>3,"nbpassager"=>4),
     "Sirius"=> array("nbequipage"=>4,"nbpassager"=>6),
     "Surcouf"=> array("nbequipage"=>8,"nbpassager"=>15),
     "Nautilus"=>array("nbequipage"=>5,"nbpassager"=>5)//création d'un tableau associatif
 );
+$total1=0;
 $total=0;
 foreach ($bateaux as $nombateau => $infoequipage) {
     if($infoequipage["nbpassager"]>10)
@@ -34,7 +35,18 @@ foreach ($bateaux as $nombateau => $infoequipage)
 
 
 }
-echo $total;
+foreach ($bateaux as $nombateau => $infoequipage) 
+{
+    
+ $total1+=$infoequipage["nbpassager"];
+
+    
+}
+
+
+
+echo'equi'.$total;
+echo 'passa'.$total1;
 //echo $bateaux["Manureva"]["nbpassager"];
 
 ?>
