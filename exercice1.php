@@ -10,6 +10,7 @@
 <h1>exercice php bateaux</h1>
 <p>test<p>
 <?php
+$total=0;
 $bateaux=array (
     "Manureva" => array("nbequipage"=>3,"nbpassager"=>4),
     "Sirius"=> array("nbequipage"=>4,"nbpassager"=>6),
@@ -24,7 +25,10 @@ echo $infoequipage["nbpassager"].'<br>'; //nombres de passagers
 }
 
 }
-//echo $bateaux["Manureva"]["nbpassager"];
+foreach ($bateaux as $nombateau => $infoequipage) {
+$total+=$infoequipage["nbpassager"];
+}
+echo $total;
 
 ?>
 </body>
