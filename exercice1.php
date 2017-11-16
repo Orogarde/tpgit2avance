@@ -46,9 +46,17 @@ foreach ($bateaux as $nombateau => $infoequipage)
 
 
 echo'equi'.$total;
-echo 'passa'.$total1;
+echo 'passa'.$total1.'<br>'; 
 //echo $bateaux["Manureva"]["nbpassager"];
-
+$tirage2=200;
+$com=0;
+$tirage = rand(0,100);
+while ($tirage != $tirage2)
+{
+ $tirage2=rand(0,100);
+ $com++;
+}
+echo "le nombre de tirages nécessaires pour retrouver ".$tirage." est ".$com;
 ?>
 </body>
 </html>
