@@ -13,7 +13,8 @@
 $bateaux=array (
     "Manureva" => array("nbequipage"=>3,"nbpassager"=>4),
     "Sirius"=> array("nbequipage"=>4,"nbpassager"=>6),
-    "Surcouf"=> array("nbequipage"=>8,"nbpassager"=>15)//création d'un tableau associatif
+    "Surcouf"=> array("nbequipage"=>8,"nbpassager"=>15),
+    "Nautilus"=>array("nbrequipage"=>5,"nbpassager"=>5)//création d'un tableau associatif
 );
 foreach ($bateaux as $nombateau => $infoequipage) {
     if($infoequipage["nbpassager"]>10)
