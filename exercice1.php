@@ -16,14 +16,20 @@ $bateaux=array (
     "Surcouf"=> array("nbequipage"=>8,"nbpassager"=>15),
     "Nautilus"=>array("nbrequipage"=>5,"nbpassager"=>5)//création d'un tableau associatif
 );
+$total=0;
 foreach ($bateaux as $nombateau => $infoequipage) {
     if($infoequipage["nbpassager"]>10)
-{
+{ 
+
 echo $nombateau.'<br>';//nom du bateau
 echo $infoequipage["nbpassager"].'<br>'; //nombres de passagers
 }
+foreach ($bateaux as $nombateau => $infoequipage) {
+    
+{ $total+=$infoequipage["nbequipage"];
 
 }
+echo $total;
 //echo $bateaux["Manureva"]["nbpassager"];
 
 ?>
