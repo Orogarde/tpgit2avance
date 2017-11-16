@@ -14,7 +14,7 @@ $bateaux=array (
     "Manureva" => array("nbequipage"=>3,"nbpassager"=>4),
     "Sirius"=> array("nbequipage"=>4,"nbpassager"=>6),
     "Surcouf"=> array("nbequipage"=>8,"nbpassager"=>15),
-    "Nautilus"=>array("nbrequipage"=>5,"nbpassager"=>5)//création d'un tableau associatif
+    "Nautilus"=>array("nbequipage"=>5,"nbpassager"=>5)//création d'un tableau associatif
 );
 $total=0;
 foreach ($bateaux as $nombateau => $infoequipage) {
@@ -24,9 +24,12 @@ foreach ($bateaux as $nombateau => $infoequipage) {
 echo $nombateau.'<br>';//nom du bateau
 echo $infoequipage["nbpassager"].'<br>'; //nombres de passagers
 }
-foreach ($bateaux as $nombateau => $infoequipage) {
+}
+foreach ($bateaux as $nombateau => $infoequipage) 
+{
     
-{ $total+=$infoequipage["nbequipage"];
+ $total+=$infoequipage["nbequipage"];
+
 
 }
 echo $total;
